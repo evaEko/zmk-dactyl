@@ -20,8 +20,8 @@
                 &kp LCTRL &lt RSE Z &lt LWR X   &kp C  &kp V  &kp B          &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp RCTRL
                                     &kp ESC &kp LALT                                           &kp GRAVE &kp BSLH
                                                &kp TAB  &none                &none    &kp RET
-                                               &kp BSPC  &kp HOME             &kp END  &kp SPACE
-                                               &kp DEL &kp GRAVE            &kp LGUI &kp LALT
+                                               &kp DEL  &kp HOME             &kp END  &kp SPACE
+                                               &kp TAB &kp BSPC            &kp SPACE &kp RET
             >;
         };
 
@@ -32,7 +32,7 @@
                 &trans  &trans &trans &trans &trans &trans                &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
                 &trans  &trans &trans &trans &trans &trans                &trans &trans   &trans   &trans &trans    &trans
                                &trans &trans                                              &trans &trans
-                                             &trans &trans                &trans &mo ADJ
+                                             &trans &trans                &trans &trans
                                              &trans &trans                &trans &trans
                                              &trans &trans                &trans &trans
             >;
