@@ -17,7 +17,7 @@
                 &kp ESC   &kp N1    &kp N2 &kp N3 &kp N4 &kp N5              &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp BSPC
                 &kp FSLH  &kp Q     &kp W  &kp E  &kp R  &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS
                 &kp LSHFT &kp A     &kp S  &kp D  &kp F  &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
-                &kp LCTRL &lt RSE Z &lt LWR X   &kp X  &kp C  &kp V  &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp SQT &kp RCTRL
+                &kp LCTRL &lt RSE Z &lt LWR X   &kp X  &kp C  &kp V  &kp B               &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp RCTRL
                                     &kp ESC &kp LALT                                           &kp GRAVE &kp BSLH
                                                &kp TAB  &none                &none    &kp RET
                                                &kp BSPC  &kp HOME             &kp END  &kp SPACE
@@ -40,14 +40,14 @@
 
         raise_layer {
             bindings = <
-                &trans  &trans   &trans &trans   &trans   &trans                &trans    &trans   &trans   &trans   &trans   &trans
-                &trans  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT             &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp K_VOL_UP
-                &trans  &trans   &trans &trans   &trans   &trans                &kp LEFT  &kp DOWN &kp UP   &kp RIGHT &trans  &trans
-                &trans  &trans   &trans &trans   &trans   &trans                &trans    &trans   &trans   &trans   &trans   &kp K_MUTE
+                &trans  &trans   &trans &trans   &trans     &trans                &trans    &trans   &trans   &trans   &trans   &kp PLUS
+                &trans  &kp EXCL &kp AT &kp HASH &kp DLLR   &kp PRCNT             &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &trans
+                &trans  &kp LBKT &kp RBKT &kp LBRC &kp RBRC &trans                &kp LEFT  &kp DOWN &kp UP   &kp RIGHT &trans  &trans
+                &trans  &trans   &trans &trans   &trans     &trans                &trans    &trans   &trans   &trans   &trans   &trans
                                  &trans &trans                                                     &trans   &trans
-                                                 &mo ADJ  &trans               &trans     &trans
-                                                 &trans   &trans               &trans     &trans
-                                                 &trans   &trans               &trans     &trans
+                                                 &mo ADJ    &trans               &trans     &trans
+                                                 &trans     &trans               &trans     &trans
+                                                 &trans     &trans               &trans     &trans
             >;
         };
 
