@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/led/led.h>
 
 #define DEFAULT 0
 #define LWR 1
@@ -9,6 +10,12 @@
 #define ADJ 3
 
 / {
+    chosen {
+        zmk_underglow_P_chain_length = <1>; // Replace 12 with the actual length of your underglow chain
+    };
+};
+
+  {
     keymap {
         compatible = "zmk,keymap";
 
