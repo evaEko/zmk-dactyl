@@ -9,12 +9,7 @@
 #define RSE 2
 #define ADJ 3
 
-/ {
-    chosen {
-        zmk_underglow_P_chain_length = <1>; // Replace 12 with the actual length of your underglow chain
-    };
-
-  {
+/  {
     keymap {
         compatible = "zmk,keymap";
 
