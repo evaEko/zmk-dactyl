@@ -52,15 +52,13 @@
         esc_or_open_home: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            binding-cells = <0>;
             bindings = <&kp ESC>, <&open_home>, <&open_browser>;
         };
         t_or_terminal: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            binding-cells = <0>;
             bindings = <&kp T>, <&open_terminal>;
         };
     };
@@ -73,7 +71,7 @@
                 &kp FSLH  &kp Q     &kp W  &kp E  &kp R  &t_or_terminal  &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS
                 &kp LSHFT &kp A     &kp S  &kp D  &kp F  &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
                 &kp LCTRL &lt RSE Z &lt LWR X   &kp C  &kp V  &kp B          &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp RCTRL
-                                  &esc_or_open_home &kp LALT                                           &kp GRAVE &kp BSLH
+                                    &kp ESC &kp LALT                                           &kp GRAVE &kp BSLH
                                                &kp TAB  &none                &none    &kp RET
                                                &kp DEL  &kp HOME            &kp END  &kp EQL
                                                &kp TAB &kp BSPC            &kp SPACE &kp RET
