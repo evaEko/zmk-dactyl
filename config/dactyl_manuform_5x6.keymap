@@ -52,13 +52,13 @@
         esc_or_open_home: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
-            binding-cells = <0>;
+            #binding-cells = <0>;
             bindings = <&kp ESC>, <&open_home>, <&open_browser>;
         };
         t_or_terminal: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
-            binding-cells = <0>;
+            #binding-cells = <0>;
             bindings = <&kp T>, <&open_terminal>;
         };
     };
