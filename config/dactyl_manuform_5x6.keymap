@@ -15,7 +15,6 @@
             label = "Open_home";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
@@ -28,7 +27,6 @@
             label = "Open_browser";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
