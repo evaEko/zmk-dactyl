@@ -53,12 +53,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&open_home>, <&open_browser>;
         };
         alt_or_terminal: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&kp LALT>, <&open_terminal>;
         };
     };
@@ -68,7 +70,7 @@
         default_layer {
             bindings = <
                 &kp ESC   &kp N1    &kp N2 &kp N3 &kp N4 &kp N5              &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp BSPC
-                &kp FSLH  &kp Q     &kp W  &kp E  &kp R  &t_or_terminal  &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS
+                &kp FSLH  &kp Q     &kp W  &kp E  &kp R  &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS
                 &kp LSHFT &kp A     &kp S  &kp D  &kp F  &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
                 &kp LCTRL &lt RSE Z &lt LWR X   &kp C  &kp V  &kp B          &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp RCTRL
                                    &esc_or_home &alt_or_terminal                           &kp GRAVE &kp BSLH
