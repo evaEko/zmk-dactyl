@@ -15,6 +15,7 @@
             label = "Open_home";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
@@ -27,6 +28,7 @@
             label = "Open_browser";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
@@ -55,7 +57,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&open_home>, <&open_browser>;
-        },
+        };
         t_or_terminal: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
