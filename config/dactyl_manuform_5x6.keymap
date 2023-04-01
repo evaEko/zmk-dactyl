@@ -80,6 +80,14 @@
             tapping-term-ms = <300>;
             bindings = <&kp LALT>, <&open_terminal>;
         };
+        esc_home: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp ESC>, <&open_home>;
+        };
+
     };
     keymap {
         compatible = "zmk,keymap";
@@ -88,11 +96,11 @@
             bindings = <
                 &kp ESC   &kp N1    &kp N2 &kp N3 &kp N4 &kp N5              &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp BSPC
                 &kp FSLH  &kp Q     &kp W  &kp E  &kp R  &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS
-                &kp LSHFT &kp A     &kp S  &kp D  &kp f_firefox &kp G        &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
+                &kp LSHFT &kp A     &kp S  &kp D  &f_firefox &kp G        &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
                 &kp LCTRL &lt RSE Z &lt LWR X   &kp C  &kp V  &kp B          &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp RCTRL
                                    &esc_home &alt_or_terminal                           &kp GRAVE &kp BSLH
                                                &kp TAB  &none                &none    &kp RET
-                                               &kp DEL  &kp HOME            &kp END  &eql_home
+                                               &kp DEL  &kp HOME            &kp END  &eql_close
                                                &kp TAB &kp BSPC            &kp SPACE &kp RET
             >;
         };
