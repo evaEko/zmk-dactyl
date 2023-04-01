@@ -35,15 +35,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        two_fs: two_fs {
-            label = "Two fs";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp F>
-                , <&macro_tap &kp F>
-                ;
-        };
         open_terminal: open_terminal {
             label = "Open_terminal";
             compatible = "zmk,behavior-macro";
@@ -75,14 +66,14 @@
             tapping-term-ms = <300>;
             bindings = <&kp EQL>, <&close_window>;
         };
-        f_firefox: tap_dance_2 {
+        ctrl_firefox: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp F>, <&two_fs>, <&open_browser>;
+            bindings = <&kp LCTRL>, <&open_browser>;
         };
-        alt_or_terminal: tap_dance_1 {
+        alt_terminal: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
@@ -105,9 +96,9 @@
             bindings = <
                 &kp ESC   &kp N1    &kp N2 &kp N3 &kp N4 &kp N5              &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp BSPC
                 &kp FSLH  &kp Q     &kp W  &kp E  &kp R  &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS
-                &kp LSHFT &kp A     &kp S  &kp D  &f_firefox &kp G        &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
-                &kp LCTRL &lt RSE Z &lt LWR X   &kp C  &kp V  &kp B          &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp LCTRL
-                                   &esc_home &alt_or_terminal                           &kp GRAVE &kp BSLH
+                &kp LSHFT &kp A     &kp S  &kp D  &kp F &kp G                &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
+           &ctrl_firefox &lt RSE Z &lt LWR X   &kp C  &kp V  &kp B           &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp RCTRL
+                                   &esc_home &alt_terminal                           &kp GRAVE &kp BSLH
                                                &kp TAB  &none                &none    &kp RET
                                                &kp DEL  &kp HOME            &kp END  &eql_close
                                                &kp TAB &kp BSPC            &kp SPACE &kp RET
