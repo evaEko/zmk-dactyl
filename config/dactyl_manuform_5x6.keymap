@@ -35,6 +35,15 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        two_fs: two_fs {
+            label = "Two fs";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp F>
+                , <&macro_tap &kp F>
+                ;
+        };
         open_terminal: open_terminal {
             label = "Open_terminal";
             compatible = "zmk,behavior-macro";
