@@ -21,7 +21,7 @@
                 &kp LCTRL &lt RSE Z &lt LWR X   &kp C  &kp V  &kp B           &kp N  &kp M  &kp COMMA &lt LWR DOT &lt RSE SQT &kp LCTRL
                                    &kp ESC &kp LALT                           &kp GRAVE &kp BSLH
                                                &kp TAB  &none                &none    &kp RET
-                                               &kp DEL  &kp HOME            &kp END  &eql_close
+                                               &kp DEL  &kp HOME            &kp END  &kp RET
                                                &kp TAB &kp BSPC            &kp SPACE &kp RET
             >;
         };
